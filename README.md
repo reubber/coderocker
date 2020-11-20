@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Front End Test Project
+You should see this challenge as an opportunity to create an app following modern development best practices (given your platform of choice), but also feel free to use your own app architecture preferences (coding standards, code organization, third-party libraries, etc). It’s perfectly fine to use vanilla code or any framework or libraries.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Scope
+**1. Infinite scroll page**
 
-## Available Scripts
+**2. Single article page**
 
-In the project directory, you can run:
+**3. Contact page**
 
-### `yarn start`
+## Requirements
+1. Create the project using any technology of your preference. It’s perfectly OK to use vanilla JS or any front end frameworks or libraries.
+2. Make it responsive using your best judgement.
+3. Create custom infinite scroll effect - use custom JavaScript (preferably the modern JS standards and APIs). Don't hesitate to use helpful NPM packages but **keep the JS bundle size low**.
+4. Use this API to display posts: https://stormy-shelf-93141.herokuapp.com/ – `_page` and `_limit` query parameters are available.
+5. When scrolling, the top header should scroll up to the top of the page and then stick to the top.
+6. We pay attention to both CSS and JS bundle sizes. Import just what you require and _not the whole package_.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Design
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Design is available in Figma at [https://www.figma.com/file/ImqUersZbn3WGyBdiEjlwKyQ/Coderockr-Front-end-Test](https://www.figma.com/file/ImqUersZbn3WGyBdiEjlwKyQ/Coderockr-Front-end-Test). If you haven't already, sign up for a free Figma account, so you can work with the design.
 
-### `yarn test`
+Prototype: [https://www.figma.com/proto/ImqUersZbn3WGyBdiEjlwKyQ/Coderockr-Front-end-Test](https://www.figma.com/proto/ImqUersZbn3WGyBdiEjlwKyQ/Coderockr-Front-end-Test)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deliverables
+The project source code and dependencies should be made available in GitHub. Here are the steps you should follow:
+1. Create a public repository on GitHub (create an account if you don't have one).
+2. Create a "development" branch and commit the code to it. Do not push the code to the master branch.
+3. Create a "screenshots" sub-folder and include at least two screenshots of the app.
+4. Include a README file that describes:
+  - Special build instructions, if any
+  - List of third-party libraries used and short description of why/how they were used
+5. Once the work is complete, create a pull request from "development" into "master" and send us the link.
+6. Avoid using huge commits hiding your progress. Feel free to work on a branch and use rebase to adjust your commits before submitting the final version.
 
-### `yarn build`
+## Supported Browsers
+Ensure that the elements work and display correctly in the following browsers:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Firefox (latest version)
+- Google Chrome (latest version)
+- Microsoft Edge (latest version)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Coding Standards
+When working on the project be as clean and consistent as possible.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Deadline
+Ideally you'd finish the test project in 5 days. It shouldn't take you longer than a entire week.
 
-### `yarn eject`
+## Quality Assurance
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Use the following checklist to ensure high quality of the project.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### General
+- First of all, it should compile and run without errors
+- Are all requirements set above met?
+- Can the project be built using `npm run build` or `yarn build` without any errors and warnings?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Browser Check
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Does page display and work correctly in supported browsers?
 
-## Learn More
+### Coding Standards
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Is coding style (for HTML/CSS/JS) consistent?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Submission
+1. A link to the Github repository.
+2. Briefly describe how you decided on the tools that you used.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Have Fun Coding 🤘
+This challenge description is intentionally vague in some aspects, but if you need assistance feel free to ask for help.
