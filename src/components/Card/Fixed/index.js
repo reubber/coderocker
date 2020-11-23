@@ -65,14 +65,12 @@ const Article = styled.div`
 
 function fixedCard ({ id, title, name, article, imageUrl, position }) {
   
-  const imageUrls=imageUrl
-  console.log('articles fixed', article)
     return (
       <Container position={position}>
         <Image src={imageUrl} alt={title}/>
         <Content>
           <Text>{name}</Text>
-          <Link to={{ pathname: `/post/${id}`, state: { title: title, name: name, img: imageUrls, article: article.children} }}>
+          <Link to={{ pathname: `/post/${id}`, state: { title: title, name: name, img: imageUrl, article: article} }}>
             <Title>{title}</Title>
           </Link>
           <Article>{article}</Article>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import Parser from 'html-react-parser'
 import Fixed from '../Card/Fixed'
 import api from '../../api'
 import Unique from '../Card/Unique'
@@ -55,6 +54,11 @@ class Home extends Component {
      .then(res => this.setState({articles: this.state.articles.concat(res.data)}))
    }
 
+   regex(body){
+    var regex = /(<([^>]+)>)/ig
+      return body.replace(regex, "");
+   }
+
   render () {
     const { articles } = this.state
     let position = false
@@ -74,10 +78,10 @@ class Home extends Component {
                 <Fixed
                   key={index}
                   id={item.id}
-                  article={Parser(item.article)}
+                  article={this.regex(item.article)}
                   position={position}
                   name={item.author}
-                  title={Parser(item.title)}
+                  title={this.regex(item.title)}
                   imageUrl={item.imageUrl}/>
               )
             } else {
@@ -86,8 +90,8 @@ class Home extends Component {
                     <Unique
                       id={item.id}
                       name={item.author}
-                      article={Parser(item.article)}
-                      title={Parser(item.title)}
+                      article={this.regex(item.article)}
+                      title={this.regex(item.title)}
                       imageUrl={item.imageUrl} />
                 </Container>
               )

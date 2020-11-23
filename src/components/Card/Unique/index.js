@@ -50,15 +50,14 @@ const PostLink = styled(Link)`
 
 
 function Unique ({ id, name, title, article, imageUrl }) {
-  const articles=`${article}`
-  const imageUrls=imageUrl
+  
   return (
     <Container>
       <Card>  
         <Image src={imageUrl} alt={title} />
         <Content>
           <Text>{name}</Text>
-          <PostLink to={{ pathname: `/post/${id}`, state: { title: title, name: name, img: imageUrls, article: articles.children} }}>
+          <PostLink to={{ pathname: `/post/${id}`, state: { title: title, name: name, img: imageUrl, article: article} }}>
             <Title>{title}</Title>
           </PostLink>
           <Article>{article}</Article>

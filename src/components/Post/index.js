@@ -37,8 +37,7 @@ const Article = styled.div`
 
 function Post (props) {
   const { title, name, img, article} = props.location.state
-  console.log('article',article)
-
+  
   return (
     <>
       <Container>
@@ -50,7 +49,7 @@ function Post (props) {
         
         </Content> 
         </div>
-        <Article>ERROR</Article>
+        <Article>{article}</Article>
       
       </Container>  
     </>
