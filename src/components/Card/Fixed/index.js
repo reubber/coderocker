@@ -20,6 +20,7 @@ const Container = styled.div`
   @media (max-width: 80rem) {
     display: flex;
     height: 450px;
+    flex-direction:column;
   }
 
 `
@@ -59,7 +60,7 @@ const Article = styled.div`
   font-size: small;
   color: #2D2D2D;
   @media (max-width: 50rem){
-    font-size: 1.3vw; 
+    font-size: 1.8vw; 
    }
 `
 
@@ -73,7 +74,7 @@ function fixedCard ({ id, title, name, article, imageUrl, position }) {
           <Link to={{ pathname: `/post/${id}`, state: { title: title, name: name, img: imageUrl, article: article} }}>
             <Title>{title}</Title>
           </Link>
-          <Article>{article}</Article>
+          <Article>{`${article.substring(0, article.length/2)}...`}</Article>
         </Content>
       </Container>
   )

@@ -60,7 +60,7 @@ function Unique ({ id, name, title, article, imageUrl }) {
           <PostLink to={{ pathname: `/post/${id}`, state: { title: title, name: name, img: imageUrl, article: article} }}>
             <Title>{title}</Title>
           </PostLink>
-          <Article>{article}</Article>
+          <Article>{`${article.substring(0, article.length/2)}...`}</Article>
           <Image src='' alt="" />
         </Content>
      
